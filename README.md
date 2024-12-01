@@ -20,3 +20,8 @@ docker service ls
 docker service inspect web-api
 docker service inspect web-api --format '{{.Spec.Mode.Replicated.Replicas}}'
 ```
+
+```bash
+# Autoscaling
+docker stack deploy -c autoscaler.yaml autoscaler
+```
