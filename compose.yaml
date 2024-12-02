@@ -1,0 +1,12 @@
+services:
+  webapi:
+    build:
+      context: ./web-api
+      dockerfile: Dockerfile
+    image: 127.0.0.1:5000/webapi
+    container_name: webapi
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    deploy:
+      replicas: 3

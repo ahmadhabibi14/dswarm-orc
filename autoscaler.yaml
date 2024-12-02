@@ -1,7 +1,0 @@
-deploy:
-  resources:
-    reservations:
-      cpus: '0.25'
-      memory: 512M
-    limits:
-      cpus: '0.50'
