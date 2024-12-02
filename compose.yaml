@@ -11,8 +11,6 @@ services:
         published: 3000
     deploy:
       replicas: 3
-      placement:
-        constraints: [node.role == manager]
       update_config:
         parallelism: 2
         order: start-first

@@ -1,3 +1,6 @@
+setup:
+	sudo snap install k6
+
 create_service:
 	docker service create \
 		--name web-api \
@@ -6,4 +9,4 @@ create_service:
 		webapi:latest
 
 test_traffic:
-	k6 run test/traffic.ts
+	k6 run test/traffic.js
