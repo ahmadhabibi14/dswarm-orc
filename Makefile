@@ -6,4 +6,4 @@ create_service:
 		webapi:latest
 
 test_traffic:
-	k6 run test/traffic.js
+	k6 run test/traffic.ts
